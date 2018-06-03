@@ -25,6 +25,16 @@ app.use(express.static(__dirname + '/client/build/'));
     res.sendFile(__dirname + '/client/build/index.html')
   })
 
+  const UsersController = require('./Controller/users')
+  app.use('/api/users', UsersController)
+  
+  
+  const ArtController = require('./Controller/art')
+  app.use('/api/users/:userId/art', PhotosController)
+  
+  const CommentsController = require('./Controller/comments')
+  app.use('/api/users/:userId/comments', CommentsController)
+
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log("Magic happening on port " + PORT);

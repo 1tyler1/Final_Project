@@ -35,9 +35,9 @@ const UserSchema = new Schema({
     type: String,
     required: true
   },
-  Art: [ArtSchema],
+  art: [ArtSchema],
   
-  Comment: [CommentSchema]
+  comments: [CommentSchema]
 })
 
 // Create models for each schema

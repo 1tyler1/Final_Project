@@ -38,12 +38,12 @@ class UpdateUserFormPage extends Component {
             />
           </div>
           <div>
-            <label htmlFor="password">Password</label>
+            <label htmlFor="e-mail">e-mail</label>
             <input
               onChange={this.handleUpdateUserChange}
-              name="password"
+              name="email"
               type="text"
-              value={this.state.updatedUser.password}
+              value={this.state.updatedUser.email}
             />
           </div>
           <div className="center">

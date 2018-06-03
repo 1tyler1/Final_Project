@@ -60,15 +60,15 @@ class LogIn extends Component {
     })
 
     return (
-      <div class="form">
+      <div className="form">
         <div>
           
         </div>
-        <div class="Link-style">
+        <div className="Link-style">
         <Link to='/'>Return Home</Link>
         <h3>Log-In</h3>
         <h6>Please Select an Existing User</h6>
-        <div class="update">
+        <div className="update">
         
        {userLinks} 
        
@@ -81,8 +81,8 @@ class LogIn extends Component {
             <input onChange={this.handleChange} name="userName" type="text"/>
           </div>
           <div>
-            <label htmlFor="password">Password</label>
-            <input onChange={this.handleChange} name="password" type="text" />
+            <label htmlFor="e-mail">E-mail</label>
+            <input onChange={this.handleChange} name="email" type="text" />
           </div>
           <div class="center">
          <button class="waves-effect waves-light btn center-align btn-small center">Send</button>

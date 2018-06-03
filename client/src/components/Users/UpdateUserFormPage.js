@@ -2,26 +2,34 @@ import React, { Component } from 'react';
 
 class UpdateUserFormPage extends Component {
   state = {
-    updatedUser: {},
+    updatedUser: {}
   };
 
   static getDerivedStateFromProps(nextProps, prevState){
     const futureState = {
         updatedUser: nextProps.user
       }
+      console.log(".")
       return futureState
   }
+
+  // componentDidMount() {
+  //   console.log(this.props.user)
+  //   const userData = { ...this.props.user }
+  //   this.setState({ updatedUser: userData })
+  // }
 
   updateUserfunction = (event) => {
       event.preventDefault()
     this.props.updateUser(this.state.updatedUser)
   }
 
-  handleUpdateUserChange = event => {
-    event.preventDefault();
+  handleUpdateUserChange = (event) => {
+    event.preventDefault()
     const user = { ...this.state.updatedUser };
     user[event.target.name] = event.target.value;
     this.setState({ updatedUser: user });
+    console.log(event.target.value)
   };
 
   render() {

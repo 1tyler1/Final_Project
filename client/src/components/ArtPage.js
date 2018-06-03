@@ -6,24 +6,19 @@ class ArtPage extends Component {
         return (
             <div>
             <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo right">Logo</a>
+    <div className="nav-wrapper teal lighten-3">
+      <a href="/" class="brand-logo right">Art Inspo</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
         <li><Link to={`/users/${this.props.match.params.userId}/edit`}>
-                    Edit
+                    Edit Account
                 </Link></li>
       </ul>
     </div>
   </nav>
                artpage
-               <div class="center">
-                <Link class="teal lighten-3 waves-effect waves-light btn center-align btn-small center" to={`/users/${this.props.match.params.userId}/edit`}>
-                    Edit
-                </Link>
+              
              </div> 
-            </div>
+          
         );
     }
 }

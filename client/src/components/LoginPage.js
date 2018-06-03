@@ -84,8 +84,8 @@ class LogIn extends Component {
             <label htmlFor="e-mail">E-mail</label>
             <input onChange={this.handleChange} name="email" type="text" />
           </div>
-          <div class="center">
-         <button class="waves-effect waves-light btn center-align btn-small center">Send</button>
+          <div className="center">
+         <button className="waves-effect waves-light btn center-align btn-small center">Send</button>
           </div>
         </form>
       </div>

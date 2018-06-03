@@ -7,7 +7,7 @@ class HomePage extends Component {
         return (
             <div>
                HomePage 
-               <Link className="waves-effect waves-light btn" to='/user'>Login</Link>
+               <Link className="teal lighten-3 waves-effect waves-light btn" to='/user'>Login</Link>
             </div>
         );
     }

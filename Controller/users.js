@@ -3,7 +3,7 @@ const { User } = require('../db/schema')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  user.find()
+  User.find()
     .then(users => {
       res.json(users)
       console.log(users)
@@ -20,7 +20,7 @@ router.post('/', (req, res) => {
     .catch((err) => {
     console.error(err)
   })
-  })
+})
   
 
 router.get('/:userId', (req, res) => {

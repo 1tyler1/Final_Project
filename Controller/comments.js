@@ -1,21 +1,21 @@
 const express = require('express')
-const { Art } = require('../db/schema')
+const { Comment } = require('../db/schema')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  Art.find()
-    .then(Arts => {
-      res.json(Arts)
-      console.log(Arts)
+  Comment.find()
+    .then(Comments => {
+      res.json(Comments)
+      console.log(Comments)
     })
     .catch((err) => console.log(err))
 })
 
 router.post('/', (req, res) => {
-  const newArt = new Art(req.body.Art)
-    newArt.save()
-    .then((Art) => {
-      res.json(Art)
+  const newComment = new Comment(req.body.Comment)
+    newComment.save()
+    .then((Comment) => {
+      res.json(Comment)
   })
     .catch((err) => {
     console.error(err)
@@ -23,27 +23,27 @@ router.post('/', (req, res) => {
   })
   
 
-router.get('/:ArtId', (req, res) => {
-  Art.findById(req.params.ArtId)
-    .then(Arts => {
-      res.json(Arts)
-      console.log(Arts)
+router.get('/:CommentId', (req, res) => {
+  Comment.findById(req.params.CommentId)
+    .then(Comments => {
+      res.json(Comments)
+      console.log(Comments)
 })
     .catch((err) => console.log(err))
 })
 
-router.delete('/:ArtId', (req, res) => {
-  Art.findByIdAndRemove (req.params.ArtId)
-    .then((Art) => {
+router.delete('/:CommentId', (req, res) => {
+  Comment.findByIdAndRemove (req.params.CommentId)
+    .then((Comment) => {
        res.sendStatus(200)
   })
      .catch(console.error)
   });
 
-router.patch('/:ArtId/', (req, res) => {
-  Art.findByIdAndUpdate(req.params.ArtId, req.body.Art, {new: true})
-  .then((Art) => {
-      res.json(Art)
+router.patch('/:CommentId/', (req, res) => {
+  Comment.findByIdAndUpdate(req.params.CommentId, req.body.Comment, {new: true})
+  .then((Comment) => {
+      res.json(Comment)
   }).catch((error) => {
       console.log(error)
   })

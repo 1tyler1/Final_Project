@@ -30,7 +30,7 @@ app.use(express.static(__dirname + '/client/build/'));
   
   
   const ArtController = require('./Controller/art')
-  app.use('/api/users/:userId/art', PhotosController)
+  app.use('/api/users/:userId/art', ArtController)
   
   const CommentsController = require('./Controller/comments')
   app.use('/api/users/:userId/comments', CommentsController)

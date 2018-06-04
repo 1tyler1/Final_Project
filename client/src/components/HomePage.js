@@ -18,7 +18,7 @@ class HomePage extends Component {
                             height="480"
                             frameBorder="0"
                             class="giphy-embed center-align"
-                            allowFullScreen>Background</iframe>
+                            allowFullScreen title="background"></iframe>
 
                         <Link
                             className="center-align teal lighten-3 waves-effect waves-light btn"

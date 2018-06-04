@@ -5,15 +5,17 @@ import '../App.css'
 class HomePage extends Component {
     render() {
         return (
+        <div className="background">
+            <div className="centered">
             <div>
-               HomePage 
+            <h1 className="homepage_header"> ART INSPO </h1>
+  
+<iframe src="https://giphy.com/embed/PH8gHFw2YJPaM" width="383" height="480" frameBorder="0" class="giphy-embed center-align" allowFullScreen></iframe>
 
-<div class="fullscreen-bg">
-    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
-        <source src="../../public/video/paint" type="video/webm" />
-    </video>
-</div>
-               <Link className="teal lighten-3 waves-effect waves-light btn" to='/user'>Login</Link>
+
+               <Link className="center-align teal lighten-3 waves-effect waves-light btn"  to='/user'>Enter</Link>
+               </div>
+            </div>
             </div>
         );
     }

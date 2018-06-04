@@ -60,7 +60,7 @@ class LogIn extends Component {
     })
 
     return (
-      <div className="form">
+      <div className="form background-color">
         <div>
           
         </div>

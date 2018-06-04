@@ -6,13 +6,13 @@ import axios from "axios"
 
 class ArtPage extends Component {
   state = {
-    
+
   }
 
-apicall = async() => {
-  const response = axios.get("http://loremricksum.com/api?paragraphs=1&quotes=1")
+// apicall = async() => {
+//   const response = axios.get("http://loremricksum.com/api?paragraphs=1&quotes=1")
 
-}
+// }
 
 
   render() {
@@ -28,7 +28,7 @@ apicall = async() => {
       </ul>
     </div>
   </nav>
-        
+  <iframe width="100%" height="100%" frameborder="0" border="0" src="https://www.queeky.com/app?apikey=<YOUR_API_KEY>"></iframe>
 
       </div>
 

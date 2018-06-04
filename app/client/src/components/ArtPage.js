@@ -16,9 +16,9 @@ class ArtPage extends Component {
       </ul>
     </div>
   </nav>
-           <div>
-           <iframe width="100%" height="100%" frameborder="0" border="0" src="https://www.queeky.com/app?apikey=<YOUR_API_KEY>"></iframe>
-           </div>    
+          
+           
+              
              </div> 
           
         );

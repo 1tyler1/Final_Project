@@ -1,9 +1,19 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-
 import SketchPage from './SketchPage';
+import axios from "axios"
+
 
 class ArtPage extends Component {
+  state = {
+    
+  }
+
+apicall = async() => {
+  const response = axios.get("http://loremricksum.com/api?paragraphs=1&quotes=1")
+
+}
+
 
   render() {
     return (
@@ -18,7 +28,7 @@ class ArtPage extends Component {
       </ul>
     </div>
   </nav>
-        <SketchPage/>
+        
 
       </div>
 

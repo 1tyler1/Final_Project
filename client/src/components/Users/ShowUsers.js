@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Redirect, Link } from 'react-router-dom';
 import UpdateUserFormPage from './UpdateUserFormPage';
 
-class ShowUserPage extends Component {
+class ShowUsers extends Component {
   state = {
     users: [],
     user: {
@@ -88,4 +88,4 @@ class ShowUserPage extends Component {
   }
 }
 
-export default ShowUserPage;
+export default ShowUsers;

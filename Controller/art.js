@@ -4,9 +4,9 @@ const router = express.Router()
 
 router.get('/', (req, res) => {
   Art.find()
-    .then(Arts => {
-      res.json(Arts)
-      console.log(Arts)
+    .then(arts => {
+      res.json(arts)
+      console.log(arts)
     })
     .catch((err) => console.log(err))
 })

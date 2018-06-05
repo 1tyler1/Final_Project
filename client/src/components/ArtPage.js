@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import SketchPage from './SketchPage';
+
 import axios from "axios"
 
 
@@ -28,7 +28,7 @@ class ArtPage extends Component {
       </ul>
     </div>
   </nav>
-  <iframe width="100%" height="100%" frameborder="0" border="0" src="https://www.queeky.com/app?apikey=<YOUR_API_KEY>"></iframe>
+  <iframe width="100%" height="400px" frameborder="0" border="0" src="https://www.queeky.com/app?apikey=<YOUR_API_KEY>"></iframe>
 
       </div>
 

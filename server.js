@@ -28,11 +28,11 @@ app.get('/', (req, res) => {
   app.use('/api/users', UsersController)
   
   
-  const ArtController = require('./Controller/art')
-  app.use('/api/users/:userId/art', ArtController)
+  // const ArtController = require('./Controller/art')
+  // app.use('/api/users/:userId/art', ArtController)
   
-  const CommentsController = require('./Controller/comments')
-  app.use('/api/users/:userId/comments', CommentsController)
+  // const CommentsController = require('./Controller/comments')
+  // app.use('/api/users/:userId/comments', CommentsController)
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
